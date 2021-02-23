@@ -1,3 +1,4 @@
+
 body{
     background-image: url(img/giphy.gif);
     background-repeat: repeat;
@@ -27,4 +28,17 @@ body{
 .jumbotron{
     background-image: url(img/header-image-1-2\ \(1\).png);
     color: white;
+}
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-250%) translateY(-200%);
+  color: #17D4FE;
+  font-size: 60px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
+ 
+
+
 }
