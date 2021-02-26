@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  
 </head>
 <body>
 
@@ -35,10 +35,10 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#history">History of Foosball</a></li>
         <li><a href="#products">Products</a></li>
-        <li><a href="#deals">Deals</a></li>
-        <li><a href="#stores">Stores</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#game">The Game</a></li>
+        <li><a href="#contact">Contact us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
@@ -47,6 +47,23 @@
     </div>
   </div>
 </nav>
+
+<div id="text" class="container">
+  <h2 id="history">The History of Foosball</h2>
+  <h3>
+  Patents for similar table games date back as early as the 1890s in Europe. However, Table Football's origins go back to 1921, when Harold Searles Thornton from the United Kingdom patented the game as "Apparatus for playing a game of table football".[2][3]
+
+Harold invented the game due to the popularity of association football in Europe in Spain, which was spreading so rapidly that he decided to make a game that people could play in their homes.[citation needed] The game adopted the name "Foosball" in the United States via German imports that called it "Tischfußball" (lit. "Table Football").[4][5] Its design inspiration came from a box of matches.[3]
+
+Belgian magazine Le Soir illustré claimed in their November 1979 issue (No. 2471 on page 26) that the French inventor Lucien Rosengart (1881–1976) came up with the game of table soccer in the 1930s when he was looking for things to keep his grandchildren entertained during the cold winter months. He called the game "babyfoot" instead of foosball. Employed at the Citroen automobile factory, Rosengart is credited with inventing the minicar, front-wheel drive, and the seat belt, among other things.[6]
+
+Alejandro Finisterre patented his invention of table football, futbolín, in Madrid during the Spanish Civil War in 1937. His version of the game is the one used in modern-day table football.[7]
+
+The game was eventually brought to the United States in the 1950s by Lawrence Patterson, reaching its peak of popularity there in the 1970s, when it could be found in bars and pool halls everywhere throughout the country.[3]
+
+In 2002, the International Table Soccer Federation (ITSF) was established in France with the mission of promoting the game. The ITSF acts as an organizing sports body, regulating international competitions and establishing the game with the International Olympic Committee (IOC) and General Association of International Sport Federation (GAISF).[3]
+  </h3>
+</div>
 
 <div class="container">    
   <div class="row">
@@ -59,7 +76,7 @@
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-success">
-        <div class="panel-heading"><a href="https://www.thepinballcompany.com/product/tornado-t-3000-tournament-foosball-table/" target="_blank">Tornado Tournament T-3000 Foosball</a></div>
+        <div id="products" class="panel-heading"><a href="https://www.thepinballcompany.com/product/tornado-t-3000-tournament-foosball-table/" target="_blank">Tornado Tournament T-3000 Foosball</a></div>
         <div class="panel-body"><img src="img/tornado.jpg" class="img-responsive" style="width:100%" alt="Tornado Tournament T-3000 Foosball"></div>
         <div class="panel-footer">$2,199.00</div>
       </div>
@@ -100,15 +117,73 @@
   </div>
 </div><br><br>
 
-<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
-<script src="myscript.js"></script>
+<div id="text" class="container">
+  <h2 id="game">The Game</h2>
+  <h3>
+    The game involves using figures mounted on rotating bars to kick a ball into the opposing goal. Table football tables can vary in size, but a typical table is about 120 centimetres (3.9 ft) long and 61 centimetres (2.00 ft) wide. The table usually contains eight rows of foos men, which are plastic, metal, wooden, or sometimes carbon-fibre figures mounted on horizontal metal bars. Each team of one or two human players controls four rows of foos men, one row each for the goalkeeper, defenders, midfield and strikers. Players manipulate the rods to control the figures, using them to hold up, pass or 'kick' the ball. Games begin when the ball is served through a hole at the side of the table, or simply placed by hand at the feet of a figure in the centre of the table. A coin toss is usually used to determine which player or team serves first. If it is not the first match or if the ball gets out of play or if the ball suddenly stops out, then the team scored last would get the serve after he scores one. The term for when the ball leaves the table or gets stopped somewhere out of the men-like figures’ reach is dead ball.[8] Expert players have been known to move balls at speeds up to 56 km/h (35 mph) in competition.[9]
+
+    The rules prohibit "over 360-degree shots", or "spinning": using the palm of the hand to swiftly spin the bar all around, instead of using wrist strokes to kick the ball with a bar-mounted figure.[10] Since the establishment of the International Table Soccer Federation (ITSF), the rules have become standardised in most international competitions. However, since January 2012, the annual World Championships and the World Cup have permitted two full 360-degree rotations.[10]
+    
+    The winner is determined when one team scores a predetermined number of goals, typically five, ten or eleven in competition. When playing Bonzini competitions, the target number of goals is seven and players must win by at least two clear goals.
+    
+    The following arrangement is common to ITSF competition tables,[11] though there are substantial variations, particularly in Spain and South America, where the Futbolín table model (or variants) is common and uses a different configuration. Looking from left to right on one side of the table, the configuration is usually as follows:
+  </h3>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span>&#8593;</span><br>Back to top</button>
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
 
 <footer class="container-fluid text-center">
   <p>Online Store Copyright</p>  
-  <form class="form-inline">Get deals:
+  <form class="form-inline">Sign up for spams:
     <input type="email" class="form-control" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Sign Up</button>
+    <button type="button" class="btn btn-success">Sign Up</button>
   </form>
+  <h4>Contact Form</h4>
+
+<div id="contact" class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="usa">Hungary</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <button type="button" class="btn btn-success">Submit</button>
+  </form>
+</div>
 </footer>
 
 </body>
